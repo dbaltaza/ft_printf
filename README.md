@@ -18,7 +18,7 @@
 
 Reimplementação da função `printf` da libc, aprendendo sobre argumentos variáveis e conversões de tipos.
 
-**Nota Final:** 100/100
+**Nota Final:** ../100
 
 ---
 
