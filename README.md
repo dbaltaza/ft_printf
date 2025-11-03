@@ -1,4 +1,4 @@
-<h1 align="center">ft_printf 42 Lisboa 🖨️ </h1>
+<h1 align="center">ft_printf 42 🖨️ </h1>
 
 ```c
             /* ************************************************************************** */
@@ -14,59 +14,59 @@
             /* ************************************************************************** */
 ```
 
-## 📋 Sobre o Projeto
+## 📋 About the Project
 
-Reimplementação da função `printf` da libc, aprendendo sobre argumentos variáveis e conversões de tipos.
+Reimplementation of the `printf` function from libc, learning about variadic arguments and type conversions.
 
-**Nota Final:** ../100
+**Final Grade:** ../100
 
 ---
 
-## 🎯 Conversões Implementadas
+## 🎯 Implemented Conversions
 
 ### Mandatory (9/9)
-Implementação de todas as conversões obrigatórias.
+Implementation of all required conversions.
 
-| Conversão | Descrição | Exemplo |
+| Conversion | Description | Example |
 |-----------|-----------|---------|
-| `%c` | Imprime um caractere | `ft_printf("%c", 'A')` → A |
-| `%s` | Imprime uma string | `ft_printf("%s", "hello")` → hello |
-| `%p` | Imprime um ponteiro em hexadecimal | `ft_printf("%p", ptr)` → 0x7fff5fbff... |
-| `%d` | Imprime um número decimal (base 10) | `ft_printf("%d", 42)` → 42 |
-| `%i` | Imprime um inteiro em base 10 | `ft_printf("%i", -42)` → -42 |
-| `%u` | Imprime um unsigned decimal | `ft_printf("%u", 42)` → 42 |
-| `%x` | Imprime hexadecimal minúsculas | `ft_printf("%x", 255)` → ff |
-| `%X` | Imprime hexadecimal MAIÚSCULAS | `ft_printf("%X", 255)` → FF |
-| `%%` | Imprime um sinal de percentagem | `ft_printf("%%")` → % |
+| `%c` | Prints a single character | `ft_printf("%c", 'A')` → A |
+| `%s` | Prints a string | `ft_printf("%s", "hello")` → hello |
+| `%p` | Prints a pointer in hexadecimal | `ft_printf("%p", ptr)` → 0x7fff5fbff... |
+| `%d` | Prints a decimal number (base 10) | `ft_printf("%d", 42)` → 42 |
+| `%i` | Prints an integer in base 10 | `ft_printf("%i", -42)` → -42 |
+| `%u` | Prints an unsigned decimal | `ft_printf("%u", 42)` → 42 |
+| `%x` | Prints hexadecimal lowercase | `ft_printf("%x", 255)` → ff |
+| `%X` | Prints hexadecimal UPPERCASE | `ft_printf("%X", 255)` → FF |
+| `%%` | Prints a percent sign | `ft_printf("%%")` → % |
 
 ---
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
 ```
 ft_printf/
-├── Makefile                 # Compilação
-├── ft_printf.h              # Header principal
-├── ft_printf.c              # Função principal
-├── ft_printf_utils.c        # Funções auxiliares (putchar, putstr, ptr)
-├── ft_printf_utils2.c       # Funções auxiliares (números, hex)
-└── libft/                   # Biblioteca libft (dependência)
+├── Makefile                 # Compilation
+├── ft_printf.h              # Main header
+├── ft_printf.c              # Main function
+├── ft_printf_utils.c        # Helper functions (putchar, putstr, ptr)
+├── ft_printf_utils2.c       # Helper functions (numbers, hex)
+└── libft/                   # Libft library (dependency)
     ├── libft.a
     └── ...
 ```
 
 ---
 
-## 🛠️ Compilação
+## 🛠️ Compilation
 
 ```bash
-make            # Compila a biblioteca libftprintf.a
-make clean      # Remove ficheiros objeto
-make fclean     # Remove tudo
-make re         # Recompila do zero
+make            # Compiles the libftprintf.a library
+make clean      # Removes object files
+make fclean     # Removes everything
+make re         # Recompiles from scratch
 ```
 
-### Como Usar
+### How to Use
 
 ```c
 #include "ft_printf.h"
@@ -80,7 +80,7 @@ int main(void)
 }
 ```
 
-**Compilar com ft_printf:**
+**Compile with ft_printf:**
 ```bash
 gcc main.c libftprintf.a -o program
 ./program
@@ -88,18 +88,18 @@ gcc main.c libftprintf.a -o program
 
 ---
 
-## 💡 Conceitos Aprendidos
+## 💡 Concepts Learned
 
 ✅ **Variadic Functions** - `va_list`, `va_start`, `va_arg`, `va_end`  
-✅ **Format Parsing** - Análise e processamento de strings de formato  
-✅ **Type Conversions** - Conversão de tipos para strings  
-✅ **Recursion** - Para impressão de números  
-✅ **Pointer Semantics** - Passar `va_list` por referência vs valor  
-✅ **Return Values** - Contar caracteres impressos
+✅ **Format Parsing** - Analyzing and processing format strings  
+✅ **Type Conversions** - Converting types to strings  
+✅ **Recursion** - For printing numbers  
+✅ **Pointer Semantics** - Passing `va_list` by reference vs value  
+✅ **Return Values** - Counting printed characters
 
 ---
 
-## 📚 Recursos Úteis
+## 📚 Useful Resources
 
 - [printf man page](https://man7.org/linux/man-pages/man3/printf.3.html)
 - [stdarg.h reference](https://en.cppreference.com/w/c/variadic)
@@ -109,4 +109,4 @@ gcc main.c libftprintf.a -o program
 
 **Made by:** dbaltaza  
 **Campus:** 42 Lisboa  
-**Year:** 2025  
+**Year:** 2025
