@@ -110,4 +110,3 @@ gcc main.c libftprintf.a -o program
 **Made by:** dbaltaza  
 **Campus:** 42 Lisboa  
 **Year:** 2025  
-**Grade:** 100/100 ✅
