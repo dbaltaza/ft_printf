@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_utils.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dbaltaza <dbaltaza@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: dbaltaza <dbaltaza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 16:23:29 by dbaltaza          #+#    #+#             */
-/*   Updated: 2025/11/03 18:06:54 by dbaltaza         ###   ########.fr       */
+/*   Updated: 2025/11/05 10:40:29 by dbaltaza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,16 +35,15 @@ int	ft_putstr(char *s)
 
 int	ft_putptr_printf(void *ptr)
 {
+	unsigned long	addr;
 	int				count;
-	unsigned long	address;
 
 	count = 0;
-	address = (unsigned long)ptr;
+	if (ptr == NULL)
+		return (ft_putstr("(nil)"));
+	addr = (unsigned long)ptr;
 	count += ft_putstr("0x");
-	if (address == 0)
-		count += ft_putchar('0');
-	else
-		count += ft_puthex_long(address);
+	count += ft_puthex_long(addr);
 	return (count);
 }
 
