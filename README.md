@@ -18,7 +18,7 @@
 
 Reimplementation of the `printf` function from libc, learning about variadic arguments and type conversions.
 
-**Final Grade:** ../100
+**Final Grade:** 100/100
 
 ---
 
